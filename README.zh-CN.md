@@ -90,4 +90,4 @@ python3 -m unittest discover -s tests -v
 
 ## License
 
-MIT。本重写版本为原创内容，不包含之前的 Anthropic `dataviz` 副本。
+本项目采用 MIT License，详见 [LICENSE](LICENSE)。

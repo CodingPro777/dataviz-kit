@@ -98,4 +98,4 @@ The reporting skill accepts database query exports or result tables. It does not
 
 ## License
 
-MIT. This rewritten version is original and does not include the previous Anthropic `dataviz` copy.
+MIT License. See [LICENSE](LICENSE).
