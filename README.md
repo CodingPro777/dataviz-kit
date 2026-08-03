@@ -2,6 +2,14 @@
 
 Two vendor-neutral Agent Skills for turning tabular data into clear, accessible visualizations and self-contained HTML reports.
 
+![DataVizKit Titanic report example](docs/screenshots/titanic-report.png)
+
+## Example output
+
+DataVizKit profiles the source data, selects defensible findings, and produces responsive, self-contained HTML reports with KPI cards, charts, caveats, and detail tables.
+
+![DataVizKit Gapminder report example](docs/screenshots/gapminder-report.png)
+
 ## Included skills
 
 - **`dataviz`** — chart selection, color roles, accessibility, interaction, and visualization anti-patterns.
