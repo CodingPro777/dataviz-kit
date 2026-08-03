@@ -2,7 +2,17 @@
 
 Two vendor-neutral Agent Skills for turning tabular data into clear, accessible visualizations and self-contained HTML reports.
 
+[English](README.md) | [简体中文](README.zh-CN.md)
+
 ![DataVizKit Titanic report example](docs/screenshots/titanic-report.png)
+
+## Video demo
+
+See DataVizKit turn CSV, XLSX, and JSON data into polished reports in 20 seconds.
+
+[![Watch the DataVizKit 20-second demo](docs/screenshots/titanic-report.png)](docs/media/datavizkit-promo.mp4)
+
+▶ **[Watch or download the MP4](docs/media/datavizkit-promo.mp4)**
 
 ## Example output
 
@@ -21,11 +31,30 @@ The skills use the portable `SKILL.md` convention and do not require a proprieta
 
 They can be used by Claude Code, Codex, Cursor, Gemini CLI, OpenClaw, and other coding agents that can read Markdown and run Python 3. Automatic skill discovery differs by product; when it is unavailable, point the agent directly at the relevant `SKILL.md` file.
 
-## Install
+## Install with your AI agent
 
-Copy both folders into your agent's skill directory:
+Paste this prompt into Claude Code, Codex, Cursor, Gemini CLI, OpenClaw, or another coding agent:
+
+```text
+Install the DataVizKit Agent Skills from
+https://github.com/CodingPro777/dataviz-kit.
+
+Detect the correct skills directory for this agent, clone or download the
+repository, install both skills/dataviz and skills/data-report, preserve their
+directory structure, and verify that both SKILL.md files are discoverable.
+Do not install paid services or unrelated dependencies. Tell me the final
+installation paths and the result of the verification.
+```
+
+The agent should detect its own convention and install both skills in the appropriate global or project-level skills directory. Restart or reload the agent if its skill index is only refreshed at startup.
+
+### Manual fallback
+
+If your agent cannot install skills itself, clone the repository and copy both folders into its documented skills directory:
 
 ```bash
+git clone https://github.com/CodingPro777/dataviz-kit.git
+cd dataviz-kit
 cp -R skills/dataviz /path/to/agent/skills/
 cp -R skills/data-report /path/to/agent/skills/
 ```
